@@ -17,8 +17,9 @@ import org.springframework.web.bind.annotation.*;
 public class PermissionController {
 
     @RequestMapping(value = "/check")
-//    @PermissionAnnotation()
+    @PermissionAnnotation()
     public JSONObject getGroupList(@RequestBody JSONObject request) {
+        System.out.println(111);
         return JSON.parseObject("{\"message\":\"SUCCESS\",\"code\":200}");
     }
 }
