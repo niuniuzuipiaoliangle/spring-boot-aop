@@ -19,7 +19,7 @@ public class PermissionController {
     @RequestMapping(value = "/check")
     @PermissionAnnotation()
     public JSONObject getGroupList(@RequestBody JSONObject request) {
-        System.out.println(111);
+        System.out.println(3);
         return JSON.parseObject("{\"message\":\"SUCCESS\",\"code\":200}");
     }
 }
